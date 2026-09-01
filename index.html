@@ -25,7 +25,8 @@
 
       <a class="button header-cta" href="#contact">Get in Touch</a>
 
-      <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+      <button class="menu-button" id="menuButton" type="button"
+              aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -67,15 +68,24 @@
             <div class="checklist">
               <div class="check-row">
                 <span class="check">✓</span>
-                <div><strong>Transactions categorized</strong><small>Books kept current and organized</small></div>
+                <div>
+                  <strong>Transactions categorized</strong>
+                  <small>Books kept current and organized</small>
+                </div>
               </div>
               <div class="check-row">
                 <span class="check">✓</span>
-                <div><strong>Accounts reconciled</strong><small>Balances reviewed against statements</small></div>
+                <div>
+                  <strong>Accounts reconciled</strong>
+                  <small>Balances reviewed against statements</small>
+                </div>
               </div>
               <div class="check-row">
                 <span class="check">✓</span>
-                <div><strong>Month-end review</strong><small>Clear records ready to use</small></div>
+                <div>
+                  <strong>Month-end review</strong>
+                  <small>Clear records ready to use</small>
+                </div>
               </div>
             </div>
 
@@ -91,10 +101,22 @@
 
     <section class="trust-strip">
       <div class="container trust-grid">
-        <div class="trust-item"><strong>Reliable &amp; Accurate</strong><span>Books you can depend on</span></div>
-        <div class="trust-item"><strong>Secure &amp; Confidential</strong><span>Your information matters</span></div>
-        <div class="trust-item mobile-optional"><strong>Small Business Focused</strong><span>Practical bookkeeping support</span></div>
-        <div class="trust-item mobile-optional"><strong>Clear Communication</strong><span>No unnecessary complexity</span></div>
+        <div class="trust-item">
+          <strong>Reliable &amp; Accurate</strong>
+          <span>Books you can depend on</span>
+        </div>
+        <div class="trust-item">
+          <strong>Secure &amp; Confidential</strong>
+          <span>Your information matters</span>
+        </div>
+        <div class="trust-item mobile-optional">
+          <strong>Small Business Focused</strong>
+          <span>Practical bookkeeping support</span>
+        </div>
+        <div class="trust-item mobile-optional">
+          <strong>Clear Communication</strong>
+          <span>No unnecessary complexity</span>
+        </div>
       </div>
     </section>
 
@@ -112,11 +134,13 @@
             <h3>Monthly Bookkeeping</h3>
             <p>Transaction categorization and organized monthly records so your books stay accurate and current.</p>
           </article>
+
           <article class="card">
             <div class="icon">✓</div>
             <h3>Bank Reconciliation</h3>
             <p>Records are compared with account statements to identify discrepancies and keep balances accurate.</p>
           </article>
+
           <article class="card">
             <div class="icon">↻</div>
             <h3>Catch-Up &amp; Cleanup</h3>
@@ -136,15 +160,26 @@
         <div class="process-grid">
           <div class="step">
             <div class="step-number">1</div>
-            <div><h3>Review</h3><p>We learn about your business, your records, and what you need.</p></div>
+            <div>
+              <h3>Review</h3>
+              <p>We learn about your business, your records, and what you need.</p>
+            </div>
           </div>
+
           <div class="step">
             <div class="step-number">2</div>
-            <div><h3>Organize</h3><p>Transactions and financial records are categorized and organized.</p></div>
+            <div>
+              <h3>Organize</h3>
+              <p>Transactions and financial records are categorized and organized.</p>
+            </div>
           </div>
+
           <div class="step">
             <div class="step-number">3</div>
-            <div><h3>Reconcile</h3><p>Accounts are reconciled and records are kept clean and current.</p></div>
+            <div>
+              <h3>Reconcile</h3>
+              <p>Accounts are reconciled and records are kept clean and current.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -177,15 +212,21 @@
           <div>
             <p class="eyebrow light">CONTACT</p>
             <h2>Let's talk about your books.</h2>
-            <p>Reach out by email or start a chat.</p>
+            <p>Reach out by email or start a live chat.</p>
+
             <div class="contact-actions">
-              <a class="button light-button" href="mailto:saltonasbookkeeping@gmail.com">Email</a>
-              <button class="button ghost-button" type="button" onclick="openChat()">Start a Chat</button>
+              <a class="button light-button"
+                 href="mailto:saltonasbookkeeping@gmail.com">Email</a>
+
+              <button class="button ghost-button"
+                      id="openCrispChat"
+                      type="button">Start a Chat</button>
             </div>
           </div>
 
           <div class="contact-details">
             <p><strong>Email</strong><br />saltonasbookkeeping@gmail.com</p>
+            <p><strong>Chat</strong><br />Live website messaging</p>
             <p><strong>Location</strong><br />Portland, Oregon</p>
             <p><strong>Service</strong><br />Local &amp; Remote Clients</p>
           </div>
@@ -193,10 +234,6 @@
       </div>
     </section>
   </main>
-
-  <a href="#contact" class="floating-chat" aria-label="Chat with Saltonas Bookkeeping">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v11H8l-4 4V4zm4 5h8M8 12h5" /></svg>
-  </a>
 
   <footer>
     <div class="container footer-grid">
@@ -208,27 +245,40 @@
     </div>
   </footer>
 
-  <script>
-    const menuButton = document.getElementById('menuButton');
-    const mobileMenu = document.getElementById('mobileMenu');
+  <!-- Crisp live chat -->
+  <script type="text/javascript">
+    window.$crisp = [];
+    window.CRISP_WEBSITE_ID = "065532e3-46c1-4eea-9bdc-8df2158b2deb";
+    (function() {
+      var d = document;
+      var s = d.createElement("script");
+      s.src = "https://client.crisp.chat/l.js";
+      s.async = 1;
+      d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+  </script>
 
-    menuButton.addEventListener('click', () => {
-      const open = mobileMenu.classList.toggle('open');
-      menuButton.setAttribute('aria-expanded', String(open));
-      menuButton.classList.toggle('open', open);
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const openCrispChat = document.getElementById("openCrispChat");
+
+    menuButton.addEventListener("click", () => {
+      const open = mobileMenu.classList.toggle("open");
+      menuButton.setAttribute("aria-expanded", String(open));
     });
 
-    mobileMenu.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        mobileMenu.classList.remove('open');
-        menuButton.classList.remove('open');
-        menuButton.setAttribute('aria-expanded', 'false');
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        menuButton.setAttribute("aria-expanded", "false");
       });
     });
 
-    function openChat() {
-      document.getElementById('contact').scrollIntoView({behavior:'smooth'});
-    }
+    openCrispChat.addEventListener("click", () => {
+      window.$crisp = window.$crisp || [];
+      window.$crisp.push(["do", "chat:open"]);
+    });
   </script>
 </body>
 </html>

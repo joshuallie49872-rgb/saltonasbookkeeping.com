@@ -1,14 +1,19 @@
-# Saltonas Bookkeeping Website v4
+# Saltonas Bookkeeping Website — Full Project with Crisp Chat
 
-This pass specifically fixes the mobile/header issues:
+This is the complete project.
 
-- The logo foreground was extracted onto transparency instead of embedding a beige square.
-- The exact SB monogram and exact wordmark from the supplied logo are used as separate transparent assets.
-- The site uses one warm paper background system, so the logo no longer looks pasted on.
-- Mobile header is a compact single row with a hamburger menu.
-- The right-side hero graphic is intentionally hidden on mobile.
-- Mobile trust section is reduced to the two most important items.
-- Process steps become compact left-aligned rows on mobile.
-- About-section logo graphic is removed entirely on mobile.
-- All layout uses min-width:0 and overflow-x:hidden to prevent horizontal scrolling.
-- Email and chat options are both present.
+Files:
+- index.html
+- styles.css
+- logo-full-transparent.png
+- logo-mark-transparent.png
+- logo-wordmark-transparent.png
+
+Crisp:
+- Website ID is installed in index.html.
+- Crisp's real widget will appear automatically.
+- The "Start a Chat" button opens the Crisp chat window.
+
+GitHub:
+Upload/replace all project files in the repository root, then commit to main.
+GitHub Pages will redeploy automatically.

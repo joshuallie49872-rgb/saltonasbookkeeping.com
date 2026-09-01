@@ -250,21 +250,6 @@ h1{
 .contact-details p{font-size:16px;word-break:break-word}
 .contact-details strong{color:white}
 
-.floating-chat{
-  position:fixed;
-  right:18px;
-  bottom:18px;
-  width:52px;
-  height:52px;
-  display:grid;
-  place-items:center;
-  border-radius:50%;
-  background:var(--navy);
-  box-shadow:0 12px 30px rgba(23,54,84,.28);
-  z-index:90;
-}
-.floating-chat svg{width:25px;height:25px;fill:none;stroke:white;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-
 footer{background:var(--paper);border-top:1px solid rgba(33,70,111,.12);padding:26px 0;color:var(--muted);font-size:14px}
 .footer-grid{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .footer-brand{display:flex;align-items:center;gap:9px;color:var(--navy-dark);font-weight:800}
@@ -281,7 +266,6 @@ footer{background:var(--paper);border-top:1px solid rgba(33,70,111,.12);padding:
 /* Mobile — intentionally simplified */
 @media(max-width:700px){
   .container{width:min(100% - 24px,1120px)}
-  .site-header{position:sticky}
   .header-row{height:64px;gap:10px}
   .brand{gap:7px}
   .brand-mark{width:38px;height:38px}
@@ -302,7 +286,7 @@ footer{background:var(--paper);border-top:1px solid rgba(33,70,111,.12);padding:
     cursor:pointer;
   }
   .menu-button span{
-    width:100%;height:2px;background:var(--navy-dark);border-radius:2px;transition:.18s ease;
+    width:100%;height:2px;background:var(--navy-dark);border-radius:2px;
   }
   .mobile-menu{
     display:none;
@@ -369,8 +353,6 @@ footer{background:var(--paper);border-top:1px solid rgba(33,70,111,.12);padding:
   .contact-card p{font-size:16px}
   .contact-actions{flex-direction:column}
   .contact-actions .button{width:100%}
-
-  .floating-chat{width:48px;height:48px;right:12px;bottom:12px}
 
   footer{padding:20px 0}
   .footer-grid{display:block;text-align:center}
