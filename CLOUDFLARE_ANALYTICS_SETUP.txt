@@ -1,0 +1,15 @@
+Cloudflare Web Analytics
+
+Recommended setup for saltonasbookkeeping.com:
+
+If the domain is proxied through Cloudflare:
+1. Open Cloudflare Dashboard.
+2. Go to Web Analytics.
+3. Add/select saltonasbookkeeping.com.
+4. Leave Automatic Setup enabled.
+
+Cloudflare will inject its analytics beacon automatically. No analytics token needs to be committed to GitHub.
+
+If the site is NOT proxied through Cloudflare, Cloudflare will instead give you a manual JavaScript beacon. Paste that beacon before </body> on index.html, privacy.html, and thanks.html.
+
+The v8 site is ready for the automatic setup and does not hard-code an analytics token.

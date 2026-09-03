@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f2ed" />
+  <title>Message Sent | Saltonas Bookkeeping</title>
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="thanks-page">
+    <div class="thanks-card">
+      <img src="logo-mark-transparent.png" alt="" />
+      <p class="eyebrow" data-i18n="eyebrow">MESSAGE SENT</p>
+      <h1 data-i18n="title">Thanks — we'll be in touch.</h1>
+      <p data-i18n="text">Your message has been sent to Saltonas Bookkeeping.</p>
+      <a class="button" href="index.html" data-i18n="home">Back to Home</a>
+    </div>
+  </main>
+  <script>
+    const es = {
+      eyebrow:"MENSAJE ENVIADO",
+      title:"Gracias — nos pondremos en contacto.",
+      text:"Su mensaje ha sido enviado a Saltonas Bookkeeping.",
+      home:"Volver al inicio"
+    };
+    (function(){
+      const langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"];
+      if (!langs.some(x => String(x).toLowerCase().startsWith("es"))) return;
+      document.documentElement.lang = "es";
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (es[key]) el.textContent = es[key];
+      });
+      document.title = "Mensaje enviado | Saltonas Bookkeeping";
+    })();
+  </script>
+</body>
+</html>

@@ -6,6 +6,11 @@
   <meta name="theme-color" content="#f7f2ed" />
   <title>Saltonas Bookkeeping | Bookkeeping for Small Businesses</title>
   <meta name="description" content="Reliable bookkeeping for small businesses. Monthly bookkeeping, bank reconciliation, and catch-up bookkeeping." />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="canonical" href="https://saltonasbookkeeping.com/" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -17,13 +22,13 @@
       </a>
 
       <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#process" data-i18n="nav_process">Process</a>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
       </nav>
 
-      <a class="button header-cta" href="#contact">Get in Touch</a>
+      <a class="button header-cta" href="#contact" data-i18n="get_in_touch">Get in Touch</a>
 
       <button class="menu-button" id="menuButton" type="button"
               aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
@@ -32,10 +37,10 @@
     </div>
 
     <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
-      <a href="#services">Services</a>
-      <a href="#process">Process</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#services" data-i18n="nav_services">Services</a>
+      <a href="#process" data-i18n="nav_process">Process</a>
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
     </nav>
   </header>
 
@@ -43,15 +48,15 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">BOOKKEEPING THAT SUPPORTS YOUR BUSINESS</p>
-          <h1>Bookkeeping<br />made simple.</h1>
-          <p class="hero-text">
+          <p class="eyebrow" data-i18n="hero_eyebrow">BOOKKEEPING THAT SUPPORTS YOUR BUSINESS</p>
+          <h1 data-i18n-html="hero_title">Bookkeeping<br />made simple.</h1>
+          <p class="hero-text" data-i18n="hero_text">
             Reliable bookkeeping for small businesses so you can stay organized,
             understand your numbers, and focus on running your business.
           </p>
           <div class="hero-actions">
-            <a class="button" href="#contact">Get in Touch</a>
-            <a class="button secondary" href="#services">View Services</a>
+            <a class="button" href="#contact" data-i18n="get_in_touch">Get in Touch</a>
+            <a class="button secondary" href="#services" data-i18n="view_services">View Services</a>
           </div>
         </div>
 
@@ -59,40 +64,40 @@
           <div class="hero-panel">
             <div class="hero-panel-head">
               <div>
-                <span class="muted">Monthly Bookkeeping</span>
-                <strong>Organized &amp; Current</strong>
+                <span class="muted" data-i18n="monthly_bookkeeping">Monthly Bookkeeping</span>
+                <strong data-i18n="organized_current">Organized &amp; Current</strong>
               </div>
-              <span class="status-pill">On Track</span>
+              <span class="status-pill" data-i18n="on_track">On Track</span>
             </div>
 
             <div class="checklist">
               <div class="check-row">
                 <span class="check">✓</span>
                 <div>
-                  <strong>Transactions categorized</strong>
-                  <small>Books kept current and organized</small>
+                  <strong data-i18n="transactions_categorized">Transactions categorized</strong>
+                  <small data-i18n="books_current">Books kept current and organized</small>
                 </div>
               </div>
               <div class="check-row">
                 <span class="check">✓</span>
                 <div>
-                  <strong>Accounts reconciled</strong>
-                  <small>Balances reviewed against statements</small>
+                  <strong data-i18n="accounts_reconciled">Accounts reconciled</strong>
+                  <small data-i18n="balances_reviewed">Balances reviewed against statements</small>
                 </div>
               </div>
               <div class="check-row">
                 <span class="check">✓</span>
                 <div>
-                  <strong>Month-end review</strong>
-                  <small>Clear records ready to use</small>
+                  <strong data-i18n="month_end_review">Month-end review</strong>
+                  <small data-i18n="records_ready">Clear records ready to use</small>
                 </div>
               </div>
             </div>
 
             <div class="mini-grid">
-              <div><span>Focus</span><strong>Accuracy</strong></div>
-              <div><span>Support</span><strong>Small Business</strong></div>
-              <div><span>Service</span><strong>Local &amp; Remote</strong></div>
+              <div><span data-i18n="focus">Focus</span><strong data-i18n="accuracy">Accuracy</strong></div>
+              <div><span data-i18n="support">Support</span><strong data-i18n="small_business">Small Business</strong></div>
+              <div><span data-i18n="service">Service</span><strong data-i18n="local_remote">Local &amp; Remote</strong></div>
             </div>
           </div>
         </div>
@@ -102,20 +107,20 @@
     <section class="trust-strip">
       <div class="container trust-grid">
         <div class="trust-item">
-          <strong>Reliable &amp; Accurate</strong>
-          <span>Books you can depend on</span>
+          <strong data-i18n="reliable_accurate">Reliable &amp; Accurate</strong>
+          <span data-i18n="dependable_books">Books you can depend on</span>
         </div>
         <div class="trust-item">
-          <strong>Secure &amp; Confidential</strong>
-          <span>Your information matters</span>
+          <strong data-i18n="secure_confidential">Secure &amp; Confidential</strong>
+          <span data-i18n="info_matters">Your information matters</span>
         </div>
         <div class="trust-item mobile-optional">
-          <strong>Small Business Focused</strong>
-          <span>Practical bookkeeping support</span>
+          <strong data-i18n="small_business_focused">Small Business Focused</strong>
+          <span data-i18n="practical_support">Practical bookkeeping support</span>
         </div>
         <div class="trust-item mobile-optional">
-          <strong>Clear Communication</strong>
-          <span>No unnecessary complexity</span>
+          <strong data-i18n="clear_communication">Clear Communication</strong>
+          <span data-i18n="no_complexity">No unnecessary complexity</span>
         </div>
       </div>
     </section>
@@ -123,28 +128,28 @@
     <section class="section services-section" id="services">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">SERVICES</p>
-          <h2>Keep your business on track.</h2>
-          <p>Straightforward bookkeeping services built around the needs of small businesses.</p>
+          <p class="eyebrow" data-i18n="services_eyebrow">SERVICES</p>
+          <h2 data-i18n="services_title">Keep your business on track.</h2>
+          <p data-i18n="services_intro">Straightforward bookkeeping services built around the needs of small businesses.</p>
         </div>
 
         <div class="cards">
           <article class="card">
             <div class="icon">▤</div>
-            <h3>Monthly Bookkeeping</h3>
-            <p>Transaction categorization and organized monthly records so your books stay accurate and current.</p>
+            <h3 data-i18n="monthly_bookkeeping">Monthly Bookkeeping</h3>
+            <p data-i18n="monthly_desc">Transaction categorization and organized monthly records so your books stay accurate and current.</p>
           </article>
 
           <article class="card">
             <div class="icon">✓</div>
-            <h3>Bank Reconciliation</h3>
-            <p>Records are compared with account statements to identify discrepancies and keep balances accurate.</p>
+            <h3 data-i18n="bank_reconciliation">Bank Reconciliation</h3>
+            <p data-i18n="bank_desc">Records are compared with account statements to identify discrepancies and keep balances accurate.</p>
           </article>
 
           <article class="card">
             <div class="icon">↻</div>
-            <h3>Catch-Up &amp; Cleanup</h3>
-            <p>Behind on your books? We can organize prior records and help get your bookkeeping back on track.</p>
+            <h3 data-i18n="catchup_cleanup">Catch-Up &amp; Cleanup</h3>
+            <p data-i18n="catchup_desc">Behind on your books? We can organize prior records and help get your bookkeeping back on track.</p>
           </article>
         </div>
       </div>
@@ -153,32 +158,32 @@
     <section class="section process-section" id="process">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">OUR PROCESS</p>
-          <h2>Simple from start to finish.</h2>
+          <p class="eyebrow" data-i18n="process_eyebrow">OUR PROCESS</p>
+          <h2 data-i18n="process_title">Simple from start to finish.</h2>
         </div>
 
         <div class="process-grid">
           <div class="step">
             <div class="step-number">1</div>
             <div>
-              <h3>Review</h3>
-              <p>We learn about your business, your records, and what you need.</p>
+              <h3 data-i18n="review">Review</h3>
+              <p data-i18n="review_desc">We learn about your business, your records, and what you need.</p>
             </div>
           </div>
 
           <div class="step">
             <div class="step-number">2</div>
             <div>
-              <h3>Organize</h3>
-              <p>Transactions and financial records are categorized and organized.</p>
+              <h3 data-i18n="organize">Organize</h3>
+              <p data-i18n="organize_desc">Transactions and financial records are categorized and organized.</p>
             </div>
           </div>
 
           <div class="step">
             <div class="step-number">3</div>
             <div>
-              <h3>Reconcile</h3>
-              <p>Accounts are reconciled and records are kept clean and current.</p>
+              <h3 data-i18n="reconcile">Reconcile</h3>
+              <p data-i18n="reconcile_desc">Accounts are reconciled and records are kept clean and current.</p>
             </div>
           </div>
         </div>
@@ -192,13 +197,13 @@
         </div>
 
         <div>
-          <p class="eyebrow">ABOUT SALTONAS BOOKKEEPING</p>
-          <h2>Bookkeeping support you can count on.</h2>
-          <p>
+          <p class="eyebrow" data-i18n="about_eyebrow">ABOUT SALTONAS BOOKKEEPING</p>
+          <h2 data-i18n="about_title">Bookkeeping support you can count on.</h2>
+          <p data-i18n="about_p1">
             Saltonas Bookkeeping provides practical bookkeeping support for small businesses
             that want accurate records without unnecessary complexity.
           </p>
-          <p>
+          <p data-i18n="about_p2">
             The focus is simple: organized books, attention to detail, clear communication,
             and dependable service.
           </p>
@@ -210,25 +215,63 @@
       <div class="container">
         <div class="contact-card">
           <div>
-            <p class="eyebrow light">CONTACT</p>
-            <h2>Let's talk about your books.</h2>
-            <p>Reach out by email or start a live chat.</p>
+            <p class="eyebrow light" data-i18n="contact_eyebrow">CONTACT</p>
+            <h2 data-i18n="contact_title">Let's talk about your books.</h2>
+            <p data-i18n="contact_intro">Reach out by email, live chat, or send a quick message below.</p>
 
             <div class="contact-actions">
               <a class="button light-button"
-                 href="mailto:saltonasbookkeeping@gmail.com">Email</a>
+                 href="mailto:saltonasbookkeeping@gmail.com" data-i18n="email_button">Email</a>
 
               <button class="button ghost-button"
                       id="openCrispChat"
-                      type="button">Start a Chat</button>
+                      type="button" data-i18n="start_chat">Start a Chat</button>
+            </div>
+
+            <div class="contact-details">
+              <p><strong data-i18n="email_label">Email</strong><br />saltonasbookkeeping@gmail.com</p>
+              <p><strong data-i18n="location_label">Based in</strong><br /><span data-i18n="portland_remote">Portland, Oregon · Remote-friendly</span></p>
             </div>
           </div>
 
-          <div class="contact-details">
-            <p><strong>Email</strong><br />saltonasbookkeeping@gmail.com</p>
-            <p><strong>Chat</strong><br />Live website messaging</p>
-            <p><strong>Location</strong><br />Portland, Oregon</p>
-            <p><strong>Service</strong><br />Local &amp; Remote Clients</p>
+          <div class="contact-form-shell">
+            <h3 data-i18n="form_title">Send a message</h3>
+            <p data-i18n="form_intro">Tell us a little about your business and what you need help with.</p>
+
+            <form class="contact-form"
+                  action="https://formsubmit.co/saltonasbookkeeping@gmail.com"
+                  method="POST">
+              <input type="hidden" name="_subject" value="New website inquiry — Saltonas Bookkeeping" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_next" value="https://saltonasbookkeeping.com/thanks.html" />
+              <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" />
+
+              <label>
+                <span data-i18n="form_name">Name</span>
+                <input type="text" name="Name" autocomplete="name" required />
+              </label>
+
+              <label>
+                <span data-i18n="form_email">Email</span>
+                <input type="email" name="Email" autocomplete="email" required />
+              </label>
+
+              <label>
+                <span data-i18n="form_business">Business name <em>(optional)</em></span>
+                <input type="text" name="Business" autocomplete="organization" />
+              </label>
+
+              <label>
+                <span data-i18n="form_message">How can we help?</span>
+                <textarea name="Message" rows="5" required></textarea>
+              </label>
+
+              <button class="button form-submit" type="submit" data-i18n="form_send">Send Message</button>
+              <small class="form-privacy">
+                <span data-i18n="form_privacy_text">By submitting, you agree that we may use your information to respond to your inquiry.</span>
+                <a href="privacy.html" data-i18n="privacy_policy">Privacy Policy</a>
+              </small>
+            </form>
           </div>
         </div>
       </div>
@@ -241,9 +284,127 @@
         <img src="logo-mark-transparent.png" alt="" />
         <span>Saltonas Bookkeeping</span>
       </div>
-      <span>© 2026 Saltonas Bookkeeping</span>
+      <div class="footer-right">
+        <a href="privacy.html" data-i18n="privacy_policy">Privacy Policy</a>
+        <span>© 2026 Saltonas Bookkeeping</span>
+      </div>
     </div>
   </footer>
+
+
+  <script>
+    const translations = {
+      es: {
+        nav_services: "Servicios",
+        nav_process: "Proceso",
+        nav_about: "Nosotros",
+        nav_contact: "Contacto",
+        get_in_touch: "Contáctenos",
+        hero_eyebrow: "CONTABILIDAD QUE APOYA A SU NEGOCIO",
+        hero_title: "Contabilidad<br />hecha simple.",
+        hero_text: "Contabilidad confiable para pequeños negocios, para que pueda mantenerse organizado, entender sus números y enfocarse en dirigir su negocio.",
+        view_services: "Ver servicios",
+        monthly_bookkeeping: "Contabilidad mensual",
+        organized_current: "Organizado y al día",
+        on_track: "Al día",
+        transactions_categorized: "Transacciones categorizadas",
+        books_current: "Libros organizados y actualizados",
+        accounts_reconciled: "Cuentas conciliadas",
+        balances_reviewed: "Saldos revisados contra estados de cuenta",
+        month_end_review: "Revisión de fin de mes",
+        records_ready: "Registros claros y listos para usar",
+        focus: "Enfoque",
+        accuracy: "Precisión",
+        support: "Apoyo",
+        small_business: "Pequeños negocios",
+        service: "Servicio",
+        local_remote: "Local y remoto",
+        reliable_accurate: "Confiable y preciso",
+        dependable_books: "Libros en los que puede confiar",
+        secure_confidential: "Seguro y confidencial",
+        info_matters: "Su información importa",
+        small_business_focused: "Enfocado en pequeños negocios",
+        practical_support: "Apoyo contable práctico",
+        clear_communication: "Comunicación clara",
+        no_complexity: "Sin complejidad innecesaria",
+        services_eyebrow: "SERVICIOS",
+        services_title: "Mantenga su negocio en orden.",
+        services_intro: "Servicios contables sencillos, diseñados alrededor de las necesidades de pequeños negocios.",
+        monthly_desc: "Categorización de transacciones y registros mensuales organizados para mantener sus libros precisos y al día.",
+        bank_reconciliation: "Conciliación bancaria",
+        bank_desc: "Comparamos sus registros con los estados de cuenta para identificar diferencias y mantener saldos precisos.",
+        catchup_cleanup: "Puesta al día y limpieza",
+        catchup_desc: "¿Sus libros están atrasados? Podemos organizar registros anteriores y ayudarle a poner su contabilidad nuevamente al día.",
+        process_eyebrow: "NUESTRO PROCESO",
+        process_title: "Simple de principio a fin.",
+        review: "Revisar",
+        review_desc: "Conocemos su negocio, sus registros y lo que necesita.",
+        organize: "Organizar",
+        organize_desc: "Las transacciones y los registros financieros se categorizan y organizan.",
+        reconcile: "Conciliar",
+        reconcile_desc: "Las cuentas se concilian y los registros se mantienen limpios y actualizados.",
+        about_eyebrow: "SOBRE SALTONAS BOOKKEEPING",
+        about_title: "Apoyo contable en el que puede confiar.",
+        about_p1: "Saltonas Bookkeeping ofrece apoyo contable práctico para pequeños negocios que desean registros precisos sin complejidad innecesaria.",
+        about_p2: "El enfoque es simple: libros organizados, atención al detalle, comunicación clara y servicio confiable.",
+        contact_eyebrow: "CONTACTO",
+        contact_title: "Hablemos de sus libros.",
+        contact_intro: "Contáctenos por correo electrónico, chat en vivo o envíenos un mensaje rápido abajo.",
+        email_button: "Correo",
+        start_chat: "Iniciar chat",
+        email_label: "Correo",
+        chat_label: "Chat",
+        live_messaging: "Mensajería en vivo del sitio web",
+        location_label: "Ubicación",
+        local_remote_clients: "Clientes locales y remotos",
+        portland_remote: "Portland, Oregon · Servicio remoto",
+        form_title: "Envíenos un mensaje",
+        form_intro: "Cuéntenos un poco sobre su negocio y en qué necesita ayuda.",
+        form_name: "Nombre",
+        form_email: "Correo electrónico",
+        form_business: "Nombre del negocio (opcional)",
+        form_message: "¿Cómo podemos ayudarle?",
+        form_send: "Enviar mensaje",
+        form_privacy_text: "Al enviar este formulario, acepta que usemos su información para responder a su consulta.",
+        privacy_policy: "Política de privacidad"
+      }
+    };
+
+    (function applyDeviceLanguage() {
+      const langs = navigator.languages && navigator.languages.length
+        ? navigator.languages
+        : [navigator.language || "en"];
+      const useSpanish = langs.some(lang => String(lang).toLowerCase().startsWith("es"));
+      if (!useSpanish) return;
+
+      document.documentElement.lang = "es";
+      const t = translations.es;
+
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (t[key]) el.textContent = t[key];
+      });
+
+      document.querySelectorAll("[data-i18n-html]").forEach(el => {
+        const key = el.getAttribute("data-i18n-html");
+        if (t[key]) el.innerHTML = t[key];
+      });
+
+      document.title = "Saltonas Bookkeeping | Contabilidad para pequeños negocios";
+      const desc = document.querySelector('meta[name="description"]');
+      if (desc) {
+        desc.setAttribute(
+          "content",
+          "Contabilidad confiable para pequeños negocios. Contabilidad mensual, conciliación bancaria y puesta al día de libros."
+        );
+      }
+    })();
+  </script>
+
+  <!-- Cloudflare Web Analytics:
+       When saltonasbookkeeping.com is proxied through Cloudflare, enable Web Analytics
+       with Automatic Setup in Cloudflare. Cloudflare will inject the beacon automatically,
+       so no analytics token needs to be stored in this repository. -->
 
   <!-- Crisp live chat -->
   <script type="text/javascript">
@@ -263,22 +424,26 @@
     const mobileMenu = document.getElementById("mobileMenu");
     const openCrispChat = document.getElementById("openCrispChat");
 
-    menuButton.addEventListener("click", () => {
-      const open = mobileMenu.classList.toggle("open");
-      menuButton.setAttribute("aria-expanded", String(open));
-    });
+    if (menuButton && mobileMenu) {
+      menuButton.addEventListener("click", () => {
+        const open = mobileMenu.classList.toggle("open");
+        menuButton.setAttribute("aria-expanded", String(open));
+      });
 
-    mobileMenu.querySelectorAll("a").forEach((link) => {
+      mobileMenu.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
         mobileMenu.classList.remove("open");
         menuButton.setAttribute("aria-expanded", "false");
+        });
       });
-    });
+    }
 
-    openCrispChat.addEventListener("click", () => {
-      window.$crisp = window.$crisp || [];
-      window.$crisp.push(["do", "chat:open"]);
-    });
+    if (openCrispChat) {
+      openCrispChat.addEventListener("click", () => {
+        window.$crisp = window.$crisp || [];
+        window.$crisp.push(["do", "chat:open"]);
+      });
+    }
   </script>
 </body>
 </html>
