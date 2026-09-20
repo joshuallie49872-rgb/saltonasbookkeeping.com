@@ -538,3 +538,55 @@ footer{background:var(--paper);border-top:1px solid rgba(33,70,111,.12);padding:
   .thanks-card{padding:36px 22px}
   .thanks-card h1{font-size:31px}
 }
+
+
+/* v8.2: Professional credential */
+.credential-card{
+  margin-top:26px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  padding:18px 22px;
+  border:1px solid var(--border);
+  border-radius:18px;
+  background:rgba(255,255,255,.72);
+  box-shadow:0 10px 26px rgba(23,54,84,.06);
+}
+.credential-copy{
+  display:grid;
+  gap:5px;
+  min-width:0;
+}
+.credential-kicker{
+  color:var(--blue);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:1.35px;
+}
+.credential-copy strong{
+  color:var(--navy-dark);
+  font-size:20px;
+}
+.credential-copy > span:last-child{
+  color:var(--muted);
+  font-size:14px;
+}
+.credly-badge{
+  width:150px;
+  min-width:150px;
+  min-height:270px;
+  display:grid;
+  place-items:center;
+}
+@media(max-width:700px){
+  .credential-card{
+    margin-top:22px;
+    padding:18px;
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  .credly-badge{
+    align-self:center;
+  }
+}
