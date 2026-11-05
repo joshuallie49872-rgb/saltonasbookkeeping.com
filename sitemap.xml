@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://saltonasbookkeeping.com/</loc>
-    <lastmod>2026-09-19</lastmod>
-  </url>
-  <url>
-    <loc>https://saltonasbookkeeping.com/privacy.html</loc>
-    <lastmod>2026-09-19</lastmod>
-  </url>
+  <url><loc>https://saltonasbookkeeping.com/</loc></url>
+  <url><loc>https://saltonasbookkeeping.com/privacy.html</loc></url>
+  <url><loc>https://saltonasbookkeeping.com/service-areas.html</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://saltonasbookkeeping.com/bookkeeping-portland.html</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://saltonasbookkeeping.com/bookkeeping-beaverton.html</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://saltonasbookkeeping.com/bookkeeping-hillsboro.html</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://saltonasbookkeeping.com/bookkeeping-aloha.html</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://saltonasbookkeeping.com/bookkeeping-tigard.html</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://saltonasbookkeeping.com/bookkeeping-lake-oswego.html</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://saltonasbookkeeping.com/monthly-bookkeeping-portland.html</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://saltonasbookkeeping.com/bookkeeping-for-landscapers.html</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://saltonasbookkeeping.com/bookkeeping-for-massage-therapists.html</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://saltonasbookkeeping.com/bookkeeping-for-contractors.html</loc><lastmod>2026-11-05</lastmod></url>
 </urlset>
