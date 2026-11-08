@@ -1,0 +1,39 @@
+name: Temporary custom-domain diagnostics
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/domain-diagnostics.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  check-public-dns:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Inspect public DNS and HTTPS certificate
+        shell: bash
+        run: |
+          set +e
+          domain=saltonasbookkeeping.com
+          echo "== Public DNS A =="
+          dig +time=4 +tries=1 +short A "$domain" @1.1.1.1
+          echo "== Public DNS AAAA =="
+          dig +time=4 +tries=1 +short AAAA "$domain" @1.1.1.1
+          echo "== Public DNS www CNAME =="
+          dig +time=4 +tries=1 +short CNAME "www.$domain" @1.1.1.1
+          echo "== Public DNS CAA =="
+          dig +time=4 +tries=1 +short CAA "$domain" @1.1.1.1
+          echo "== Authoritative nameservers =="
+          dig +time=4 +tries=1 +short NS "$domain" @1.1.1.1
+          echo "== Google DNS A =="
+          dig +time=4 +tries=1 +short A "$domain" @8.8.8.8
+          echo "== HTTPS request (headers/status only) =="
+          curl -IL --max-time 15 -sS -o /dev/null -w "HTTPS code: %{http_code}, SSL verify result: %{ssl_verify_result}, Remote IP: %{remote_ip}\n" "https://$domain/"
+          echo "== HTTPS www request =="
+          curl -IL --max-time 15 -sS -o /dev/null -w "HTTPS code: %{http_code}, SSL verify result: %{ssl_verify_result}, Remote IP: %{remote_ip}\n" "https://www.$domain/"
+          echo "== Certificate details =="
+          timeout 12 bash -c 'echo | openssl s_client -connect saltonasbookkeeping.com:443 -servername saltonasbookkeeping.com 2>/dev/null | openssl x509 -noout -subject -issuer -dates -ext subjectAltName'
+          exit 0
